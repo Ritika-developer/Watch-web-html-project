@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+
+  body{
+    background-color:black ;
+    grid-template-columns: repeat(45% 45%);
+  }
+  
+  .navbar{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+  }
+
+  .navbar h1{
+    display: flex;
+    font-size: 40px;
+  }
+
+  .navbar p{
+    color: aqua;
+  }
+  
+  .navbar ul{
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+  }
+  
+  .navbar label{
+    display: none;
+  }
+  
+  #click:checked~.navbar ul{
+    display: block;
+  }
+  
+  @media screen and (max-width:650px){
+    .navbar label{
+        display: block;
+        margin-right: 20px;
+    }
+    .navbar ul{
+        display: none;
+    }
+  }
+  
+  .navbar .click i{
+  color: white;   
+  }
+  
+  .navbar h1{
+    line-height: 0.8;
+    margin-left: 20px;
+  }
+  
+  .help{
+    margin-right: 20px;
+  }
+  
+  #click{
+    display: none;
+  }
+  
+  .navbar ul li:hover{
+    border: 1px solid white;
+  }
+
+  .imageslider{
+    width: 400px;
+    height: 500px;
+    margin: 40px 0px 0px 40px;
+    background-image: url("image/kid.jpg");
+    background-size: 100% 100%;
+    animation: changeimage 30s linear infinite;
+}
+
+@keyframes changeimage {
+    0%{
+        background-image: url("image/kid.jpg");  
+      }
+
+    25%{
+        background-image: url("image/men20.jpg");  
+          }
+
+    50%{
+        background-image: url("image/women20.jpg");   
+         }
+    75%{
+        background-image: url("image/kid4.jpg");  
+      }
+    100%{
+        background-image: url("image/men19.jpg");   
+     }
+}
+
+.first{
+    display: flex;
+}
+.off h2{
+position: fixed;
+top: 480px;
+left: 330px;
+}
+
+.off a{
+  color: black;
+  font-weight: bolder;
+  position: fixed;
+  top: 505px;
+  left: 350px;
+  text-decoration: none;
+  font-size: larger;
+
+}
+
+.first a:hover{
+  border: 1px solid blue;
+  box-shadow: 2px 2px 12px blue;
+}
+
+.first .imageslider{
+    margin: 40px 50px 0px 60px;
+    position: sticky;
+    top: 50px;
+}
+
+.image img{
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+}
+
+.image{
+    width:600px;
+    position: absolute;
+    top: 50px;
+    right: 40px;
+}
+
+  .area{
+    height: 280vh;
+    display: flex;
+    margin: 20px;
+  }
+  .area .first{
+    width: 50%;
+  }
+
+  .area .second{
+    height: 280vh;
+    width: 70%;
+  }
+
+  .second h2{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .second img{
+    height: 200px;
+    margin-left: 15px;
+    margin-top: 30px;
+    display: inline;
+  }
+
+  .second img:hover{
+    scale: 1.1;
+  }
+
+  .second img{
+    border: 2px solid black;
+    box-shadow: 0.0px 0.0px 12px white;
+  }
+
+
+  
+  .footer{
+    background-color: rgba(128, 128, 128, 0.384);
+    display: flex;
+    color: white;
+  }
+  
+  .footer .footer1{
+    display: flex;
+  }
+  
+  .footer .footer2{
+    display: flex;
+  }
+  
+    .footer ul li{
+      list-style-type: none;
+    }
+  
+    .footer1 .about{
+      margin-left: 60px;
+      padding: 15px;
+    }
+  
+    .footer1 .groupcompanies{
+  padding: 15px;
+    }
+  
+   .footer h3:hover{
+    scale: 1.1;
+   }
+  
+   .footer1 ul li:hover{
+    text-shadow: 1px 1px 12px aqua;
+   }
+   
+   
+   .footer2 ul li:hover{
+    text-shadow: 1px 1px 12px aqua;
+   }
+   
+    
+    .footer1 .help{
+      padding:15px;
+        }
+       
+        
+    .footer1 .consumerpolicy{
+      padding: 15px;
+        }
+  .footer2 .consumerpolicy{
+    padding: 15px;
+  }     
+  
+  
+  .footer2 .mail{
+    padding: 10px;
+      }
+  
+      
+    .footer2 .registeredoffice{
+      padding: 10px;
+        }
+       
+     
+

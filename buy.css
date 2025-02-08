@@ -1,0 +1,25 @@
+body{
+    color: white;
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+}
+
+fieldset{
+    margin-left: 35%;
+    width: 30%;
+    border: 2px solid aqua;
+    box-shadow: 1px 1px 12px aqua;
+}
+
+input{
+    border: 1px solid aqua;
+    box-shadow: 1px 1px 12px aqua;
+    border-radius: 10px;
+}
+
+#sub{
+    margin-left: 40%;
+}
