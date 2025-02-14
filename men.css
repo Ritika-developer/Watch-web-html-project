@@ -7,16 +7,7 @@ body{
       padding: 0;
       box-sizing: border-box;
   }
-  h1{
-    text-align: center;
-    text-shadow:3px 5px 15px white;
-    font: 2em Arial,sans-serif;
-    color: white;
-  }
-  h1 a{
-    text-decoration:none;
-    color:black;
-  }
+
   .navbar{
     color: white;
     display: flex;
@@ -41,6 +32,29 @@ body{
     display: block;
   }
   
+
+  @media screen and (max-width:650px){
+    .navbar label{
+        display: block;
+    }
+    .navbar ul{
+      text-align: center;
+        display: none;
+        position: absolute;
+        top: 130px;
+        right: 0;
+    }
+  
+    .navbar ul li{
+        padding: 10px;
+        font-size: larger;
+        background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0.2));
+        backdrop-filter:blur(2px);
+    }
+  
+  }
+  
+/* 
   @media screen and (max-width:650px){
     .navbar label{
         display: block;
@@ -50,7 +64,7 @@ body{
         display: none;
     }
   }
-  
+   */
   .navbar .click i{
   color: white;   
   }
@@ -58,6 +72,7 @@ body{
   .navbar h1{
     display: flex;
     font-size: 40px;
+    margin-left: 20px;
   }
   
 
@@ -65,10 +80,17 @@ body{
     color: aqua;
   }
 
+  
+  .navbar ul li a{
+    text-decoration: none;
+    color: white;
+  }
+
+
   .help{
     margin-right: 20px;
   }
-  
+
   #click{
     display: none;
   }
@@ -80,8 +102,8 @@ body{
   
   .content-right{
       height:70%;
-      width: 52%;
-      padding: 50px 100px;
+      width: 50%;
+      padding: 5px 5px;
       white-space: nowrap;
       overflow-x: auto;
       position: absolute;
@@ -110,33 +132,76 @@ body{
   
   .product h4{
       font-size: 18px;
+      left: 10px;
       text-transform: capitalize;
       position: absolute;
-      bottom: 28%;
+      bottom: 37%;
   }
   
   .catagory{
       position: absolute;
-      bottom: 20%;
+      left: 10px;
+      bottom: 30%;
       font-weight: 500;
       text-transform: capitalize;
   }
   
   .color{
       position: absolute;
-      bottom: 15%;
+      left: 10px;
+      bottom: 24%;
       font-weight: 500;
       text-transform: capitalize;
   }
-  
+
   .price{
-      font: 18px;
-      position: absolute;
-      bottom: 5%;
-      font-weight: 600;
-      text-transform: capitalize;
+    font: 18px;
+    position: absolute;
+    bottom: 18%;
+    left: 10px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+  
+  .shop{
+    position: absolute;
+    bottom: 7%;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color:aqua;
+    color: black;
+    font-weight: bolder;
+    padding: 2px;
+    text-decoration: none;
+    border: 2px solid black;
+    margin-left: 20px;
+  }
+
+  
+  .cart{
+    position: absolute;
+    left: 35%;
+    bottom: 7%;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: aqua;
+    color: black;
+    font-weight: bolder;
+    padding: 2px;
+    text-decoration: none;
+    border: 2px solid black;
+    margin-left: 20px;
+  }
+
+  .shop:hover{
+    box-shadow:1px 1px 12px black;
   }
   
+.cart:hover{
+  box-shadow: 1px 1px 12px black;
+}
+
   .sideimg img{
     height: 400px;
     margin-top: 40px;
@@ -174,6 +239,53 @@ body{
     color: white;
   }
   
+
+
+  .rolex{
+    display: inline-block;
+    border: 2px solid aqua;
+    line-height: 30px;
+    margin-left: 15px;
+  }
+  
+  .extra h1{
+    color: white;
+    
+    margin: 10px 0px 10px 43%;
+    padding: 50px 50px 20px 50px;
+    
+  }
+  
+  .rolex img{
+  height: 250px;
+  width: 220px;
+  }
+  
+  .rolex h4{
+    padding-left: 5px;
+    color: white;
+
+  }
+  
+  
+  .rolex p{
+    color: white;
+    padding-left: 5px;
+  }
+  
+  .rolex a{
+    text-decoration: none;
+    margin: 5px 10px 5px 20px;
+    border: 0.1px solid blue;
+    background-color: aqua;
+    color: black;
+  }
+  
+  .rolex a:hover{
+  box-shadow: 1px 1px 12px white;
+  }
+  
+
 .footer{
   background-color: rgba(128, 128, 128, 0.384);
   display: flex;

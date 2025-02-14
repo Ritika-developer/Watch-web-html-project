@@ -1,9 +1,12 @@
+
+
 body{
     color: white;
     background-color: black;
 }
 
 h1{
+    margin-top: 0;
     text-align: center;
 }
 
@@ -11,11 +14,35 @@ h2{
 margin-left: 16px;
 }
 
-fieldset{
-    margin-left: 40%;
-    width: 23%;
+a{
+    text-decoration: NONE;
+    color: black;
+    padding: 2px;
+    font-weight: bolder;
+    margin-left: 45%;
     border: 2px solid aqua;
     box-shadow: 1px 1px 12px aqua;
+    background-color: white;
+}
+
+
+h4{
+    text-align: center;
+}
+.fie{
+    width: 91%;
+    margin-left: 0;
+}
+
+fieldset{
+    width:30%;
+    margin-left: 36%;
+    border: 2px solid aqua;
+    box-shadow: 1px 1px 12px aqua;
+}
+
+.OC{
+    margin-left: 25%;
 }
 
 label{
@@ -31,14 +58,4 @@ input{
 
 #sub{
     margin-left: 40%;
-}
-
-.con hr{
-    width: 10%;
-}
-
-.con{
-    width: 30%;
-    margin-left: 37%;
-    display: flex;
 }
