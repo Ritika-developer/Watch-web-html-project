@@ -104,8 +104,8 @@ body{
       height:70%;
       width: 50%;
       padding: 5px 5px;
-      white-space: nowrap;
-      overflow-x: auto;
+     white-space: nowrap;
+      overflow-x: auto; 
       position: absolute;
       top: 125px;
       left:600px;
@@ -349,4 +349,40 @@ padding: 15px;
     padding: 10px;
       }
      
-   
+      @media screen and (max-width:600px){
+        .content-right{
+          width: 100%;
+          position: absolute;
+          top: 130vh;
+          left: 10%;
+        }
+
+        .extra{
+          display: flex;
+          position: absolute;
+          top: 220vh;
+          left: 0%;
+        }
+        
+        .extra1{
+          display: flex;
+          position: absolute;
+          top: 300vh;
+          left: -15%;
+        }
+        
+        .extra2{
+          display: flex;
+          position: absolute;
+          top: 380vh;
+          left: -15%;
+        }
+
+        .footer{
+          display: none;
+        }
+
+        .extra h1{
+          display: none;
+        }
+      }

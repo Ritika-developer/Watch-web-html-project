@@ -34,6 +34,10 @@ h4{
     margin-left: 0;
 }
 
+.fie a{
+    margin-left: 120px;
+}
+
 fieldset{
     width:30%;
     margin-left: 36%;
@@ -42,7 +46,7 @@ fieldset{
 }
 
 .OC{
-    margin-left: 25%;
+    margin-left: 40%;
 }
 
 label{
@@ -55,7 +59,7 @@ input{
     box-shadow: 1px 1px 12px aqua;
     border-radius: 10px;
 }
-
+/* 
 #sub{
-    margin-left: 40%;
-}
+    margin-left: 20%;
+} */

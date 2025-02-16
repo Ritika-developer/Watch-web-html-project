@@ -128,7 +128,7 @@
 }
 
 .first{
-    display: flex;
+    display:flex;
 }
 
 .first a:hover{
@@ -147,7 +147,7 @@
     height: 280vh;
     display: flex;
     margin: 20px;
-  }
+  } 
   .area .first{
     width: 50%;
   }
@@ -243,5 +243,34 @@
       padding: 10px;
         }
        
-     
+
+        @media screen and (min-width:0px) and (max-width:600px) {
+          .footer{
+            position: absolute;
+            bottom: -4300px;
+          }
+          hr{
+            display: none;
+          }
+
+        }
+        @media screen and (min-width:601px) and (max-width:768px) {
+          .footer{
+            position: absolute;
+            bottom: -4300px;
+          }
+          hr{
+            display: none;
+          }
+        }
+        @media screen and (min-width:769px) and (max-width:992px) {
+          .footer{
+            position: absolute;
+            bottom: -4300px;
+          }
+          hr{
+            display: none;
+          }
+        }
+  
 
